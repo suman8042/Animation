@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{background-color: rgb(107, 233, 233);
+height:400px;
+}
+.ball{
+    background-color: palevioletred;
+    height:50px;
+    width:50px;
+    position:relative;
+    top:350px;
+    border-radius: 50px;;
+animation: move 1s ease-in-out 1s infinite alternate ,
+translateX 1s ease-in-out 1s infinite alternate;
+
+
+}
+@keyframes translateX {
+    from{}
+    to{transform:translateX(200px)
+      
+    }
+}
+@keyframes move {
+    from{}
+    to{transform:translateY(-200px)
+      
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
